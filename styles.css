@@ -1,0 +1,64 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f1e3;
+    color: #333;
+}
+
+.navbar {
+    background-color: #d7ccc8;
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #6d4c41;
+}
+
+.nav-link {
+    color: #6d4c41;
+}
+
+.nav-link:hover {
+    color: #3e2723;
+}
+
+.bg-cream {
+    background-color: #f7f1e3 !important;
+}
+
+.bg-brown {
+    background-color: #6d4c41 !important;
+}
+
+footer {
+    background-color: #3e2723;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.back-button i {
+    margin-right: 5px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-cream">
+        <a class="navbar-brand" href="#">Vogue Cafe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/vogue.cafee?igshid=MW5nMGl3Z2gzenJjdw==">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-indicator" class="cart-empty"></span>
+                        <span id="cart-total">0.00</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="text-center">Our Menu</h1>
+
+        <!-- Product Grid -->
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Caffe Latte</h5>
+                        <p class="card-text">Creamy espresso with steamed milk.</p>
+                        <p class="card-text">$5.00</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Caffe Latte" data-price="5.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Coffee</h5>
+                        <p class="card-text">Strong and bold black coffee.</p>
+                        <p class="card-text">$4.50</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Black Coffee" data-price="4.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">Espresso mixed with steamed milk foam.</p>
+                        <p class="card-text">$5.50</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Cappuccino" data-price="5.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more products here -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product4.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Caramel Macchiato</h5>
+                        <p class="card-text">Espresso with vanilla-flavored syrup and steamed milk.</p>
+                        <p class="card-text">$6.00</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Caramel Macchiato" data-price="6.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product5.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Peach Tea</h5>
+                        <p class="card-text">Refreshing peach-flavored tea.</p>
+                        <p class="card-text">$3.50</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Peach Tea" data-price="3.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product6.jpg" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Lemon Tea</h5>
+                        <p class="card-text">Zesty lemon-flavored tea.</p>
+                        <p class="card-text">$3.50</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Lemon Tea" data-price="3.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product7.jpg" class="card-img-top" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Lychee Tea</h5>
+                        <p class="card-text">Exotic lychee-flavored tea.</p>
+                        <p class="card-text">$4.00</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Lychee Tea" data-price="4.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product8.jpg" class="card-img-top" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Milk Tea</h5>
+                        <p class="card-text">Rich and creamy milk tea.</p>
+                        <p class="card-text">$4.00</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Milk Tea" data-price="4.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product9.jpg" class="card-img-top" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Toasted Bread</h5>
+                        <p class="card-text">Warm and crispy toasted bread.</p>
+                        <p class="card-text">$3.00</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Toasted Bread" data-price="3.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product10.jpg" class="card-img-top" alt="Product 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese Cake</h5>
+                        <p class="card-text">Creamy and indulgent cheese cake.</p>
+                        <p class="card-text">$6.50</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Cheese Cake" data-price="6.50">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="product11.jpg" class="card-img-top" alt="Product 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Waffle</h5>
+                        <p class="card-text">Crispy waffle topped with syrup.</p>
+                        <p class="card-text">$5.00</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Waffle" data-price="5.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </main>
+
+    <footer class="bg-brown text-white text-center p-3 mt-5">
+        <p>© 2024 Vogue Cafe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Retrieve cart items from localStorage
+            var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+            // Function to update cart total
+            function updateCartTotal() {
+                var total = 0;
+                // Calculate total
+                for (var i = 0; i < cartItems.length; i++) {
+                    total += cartItems[i].price;
+                }
+                // Update cart total
+                $("#cart-total").text(total.toFixed(2));
+            }
+
+            // Function to add product to cart
+            function addToCart(product, price) {
+                // Add product to cart
+                cartItems.push({ product: product, price: price });
+                // Update cart total
+                updateCartTotal();
+                // Save cart items to localStorage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                // Show success message
+                alert(product + " added to cart.");
+            }
+
+            // Event listener for Add to Cart buttons
+            $(".add-to-cart-btn").click(function() {
+                var product = $(this).data("product");
+                var price = parseFloat($(this).data("price"));
+                addToCart(product, price);
+            });
+        });
+    </script>
+</body>
+</html>
+
