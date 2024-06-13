@@ -40,6 +40,7 @@
                             <tr>
                                 <th>Product</th>
                                 <th>Price</th>
+                                <th>Quantity</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -57,6 +58,7 @@
                 <h4>Order Summary</h4>
                 <hr>
                 <p>Total: $<span id="order-total">0.00</span></p>
+                <button class="btn btn-primary" id="pay-btn">Pay Now</button>
             </div>
         </div>
     </main>
@@ -76,11 +78,29 @@
             function displayCartItems() {
                 var cartTable = $("#cart-items");
                 cartTable.empty();
+                // Object to keep track of item quantities
+                var itemQuantities = {};
+
+                // Count quantities of each item in cart
+                cartItems.forEach(function(item) {
+                    if (item.product in itemQuantities) {
+                        itemQuantities[item.product]++;
+                    } else {
+                        itemQuantities[item.product] = 1;
+                    }
+                });
+
                 // Loop through cart items and add them to the table
                 cartItems.forEach(function(item, index) {
+                    // Check if item already added to table
+                    if ($("#cart-items").find('td:contains("' + item.product + '")').length > 0) {
+                        return; // Skip if already added
+                    }
+
                     var row = $("<tr>");
                     row.append($("<td>").text(item.product));
                     row.append($("<td>").text("$" + item.price.toFixed(2)));
+                    row.append($("<td>").text(itemQuantities[item.product])); // Display quantity
                     row.append($("<td>").html('<button class="btn btn-danger remove-from-cart-btn" data-index="' + index + '"><i class="fas fa-trash"></i></button>'));
                     cartTable.append(row);
                 });
@@ -116,6 +136,12 @@
             $(document).on("click", ".remove-from-cart-btn", function() {
                 var index = $(this).data("index");
                 removeFromCart(index);
+            });
+
+            // Pay Now button functionality (sample alert for demo)
+            $("#pay-btn").click(function() {
+                alert("Payment functionality is not implemented in this demo.");
+                // In a real application, you would proceed with payment processing here
             });
         });
 
