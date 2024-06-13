@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f7f1e3;
+    background-color: #E7E6E2;
     color: #333;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .bg-cream {
-    background-color: #f7f1e3 !important;
+    background-color: #E7E6E2 !important;
 }
 
 .bg-brown {
@@ -61,4 +61,77 @@ footer p {
 
 .back-button i {
     margin-right: 5px;
+}
+.navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+.navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+
+.cart-indicator {
+    position: relative;
+}
+
+.cart-indicator .cart-filled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+.navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+
+.cart-indicator {
+    position: relative;
+}
+
+.cart-indicator .cart-filled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust the height for desktop */
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 20px; /* Space between cards */
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Adjust the height for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .card-img-top {
+        height: auto; /* Let the image be responsive */
+        width: 40%; /* Adjust image width */
+        margin-right: 20px; /* Space between image and text */
+    }
+
+    .card-body {
+        flex: 1; /* Take remaining space */
+    }
 }
