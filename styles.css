@@ -103,35 +103,59 @@ footer p {
     border-radius: 50%;
 }
 
-.card-img-top {
-    height: 200px; /* Adjust the height for desktop */
-    object-fit: cover;
+.card {
+    height: 100%;
 }
 
-.card {
-    margin-bottom: 20px; /* Space between cards */
+.card-img-top {
+    height: 200px; /* Tentukan tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Gambar akan menyesuaikan ukuran kotak */
+}
+
+.card-body {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .card-img-top {
-        height: 150px; /* Adjust the height for tablets */
-    }
-}
-
-@media (max-width: 576px) {
-    .card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        height: 250px; /* Mengatur ulang tinggi gambar untuk mode mobile */
     }
     
-    .card-img-top {
-        height: auto; /* Let the image be responsive */
-        width: 40%; /* Adjust image width */
-        margin-right: 20px; /* Space between image and text */
+    .card {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-
+    
     .card-body {
-        flex: 1; /* Take remaining space */
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 250px; /* Tinggi gambar untuk desktop */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: auto; /* Tinggi gambar diubah untuk mode mobile */
     }
 }
